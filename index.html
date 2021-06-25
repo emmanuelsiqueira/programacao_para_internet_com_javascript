@@ -6,7 +6,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script type="text/javascript" src="js/main.js"></script>
     </head>
-    <body>
-        <h1>Olá mundo!</h1>
+    <body onload="load()">
+        <h1>Código fonte Javascript no arquivo js/main.js</h1>
+
+        <button type="button" onclick="clicou()">Clique aqui</button>
+        <p id="redirecionaNovaAba" onclick="redirecionaNovaAba()"></p>
+        <p id="redirecionaMesmaJanela" onclick="redirecionaMesmaJanela()"></p>
+        <p id="mousemove" onmouseover="muda(this)" onmouseout="volta(this)">Passe o mouse aqui</p>
+        <p id="mousemove2" onmouseover="muda(this)" onmouseout="volta(this)">Passe o mouse aqui</p>
+
+        <select onchange="Change(this)">
+            <option value="1">Valor 1</option>
+            <option value="2">Valor 2</option>
+            <option value="3">Valor 3</option>
+        </select>
     </body>
 </html>

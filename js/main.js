@@ -1,9 +1,87 @@
+/* Parte 2: Manipulando elementos da página
+function clicou() {
+    //alert("Obrigado por clicar");
+    document.getElementById("redirecionaNovaAba").innerHTML = "<b>Clique aqui para abrir uma nova aba</b>";
+    document.getElementById("redirecionaMesmaJanela").innerHTML = "<b>Clique aqui para abrir na mesma janela</b>";
+    console.log(document.getElementById("redirecionaNovaAba"));
+    console.log(document.getElementById("redirecionaMesmaJanela"));
+}
+
+function redirecionaNovaAba() {
+    window.open("https://www.google.com");
+}
+
+function redirecionaMesmaJanela() {
+    window.location.href = "https://www.google.com";
+}
+
+function muda(elemento) {
+    //document.getElementById("mousemove").innerHTML = "Obrigado por passar o mouse";
+    elemento.innerHTML = "Obrigado por passar o mouse";
+}
+
+function volta(elemento) {
+    //document.getElementById("mousemove").innerHTML = "Passe o mouse aqui";
+    elemento.innerHTML = "Passe o mouse aqui";
+}
+
+function load() {
+    alert("Página carregada");
+}
+
+function Change(elemento) {
+    console.log(elemento.value);
+}
+/*
+function muda() {
+    document.getElementById("mousemove").innerHTML = "Obrigado por passar o mouse";
+}
+
+function volta() {
+    document.getElementById("mousemove").innerHTML = "Passe o mouse aqui";
+}
+
+/* Desenvolva páginas web com Javascript
+var valida = 0;
+
+function validaIdade(idade) {
+    if (idade >= 18) {
+        valida = true;
+    }
+    else
+    {
+        valida = false;
+    }
+
+    return valida;
+}
+
+var idade = prompt("Qual sua idade?");
+validaIdade(idade);
+console.log(valida);
+
+function soma(n1,n2) 
+{
+    return n1 + n2;
+}
+
+console.log(soma(2,3));
+
+function setReplace(frase,nome,novo_nome)
+{
+    return frase.replace(nome,novo_nome);
+}
+
+console.log(setReplace("Vai Japão","Japão","Brasil"));
+*/
+
+/* Condicionais, laços de repetição e Date
 
 var Data = new Date();
 console.log(Data.getDay());
 console.log(Data.getMonth());
 console.log(Data.getFullYear());
-
+*/
 
 /*
 var count;
